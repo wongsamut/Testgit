@@ -120,12 +120,7 @@ $limit = 50;
 		<img src="http://<?=$urlwebsite;?>/img/svg.png" width="45" alt="" class="post-icon" />
 
 				<div class="entry-meta">
-			<span class="posted-on"><time class="entry-date published">UPDATE TODAY</time></span>		</div>
-		
-		<h1 class="entry-title"><a href="http://<?=$urlwebsite;?>" rel="bookmark"><?=$keyword;?></a></h1>
-	</header>
-
-		<div class="entry-content">
+	
 		<p><?
 
 		echo '<ul>';
