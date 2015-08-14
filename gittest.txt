@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 dfljsadkl;fjasdl;kfkuku
+=======
+git@github.com:wongsamut/Testgit.git
+
+ git clone git://github.com/schacon/grit.git
+
+eieieieiei
+>>>>>>> 84e3b74c74e3f2a385ab324cc86b45ace32480e8

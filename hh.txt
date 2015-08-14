@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 1111111111111111
 2
@@ -7,3 +8,6 @@
 
 
 asdfghjkl;
+=======
+sdfasasdf000;aaaaaaaaa vvvvvvv
+>>>>>>> 84e3b74c74e3f2a385ab324cc86b45ace32480e8
