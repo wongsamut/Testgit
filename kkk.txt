@@ -1,4 +1,4 @@
-dddddddd<?php 
+mjiijmdddddddd<?php 
 include('function.php');
 $data = file('data.csv');
 shuffle($data); // Rand Show;
