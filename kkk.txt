@@ -1,0 +1,186 @@
+olololo555mjiijmdddd<?php 
+00000mjiijmdddd<?php 
+
+include('function.php');
+$data = file('data.csv');
+shuffle($data); // Rand Show;
+$limit = 50;
+?>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title><?=$keyword;?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel='stylesheet' id='undiscovered-slicknav-style-css'  href='http://<?=$urlwebsite;?>/css/slicknav.css' type='text/css' media='all' />
+<link rel='stylesheet' id='undiscovered-bxslider-style-css'  href='http://<?=$urlwebsite;?>/css/jquery.bxslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='undiscovered-fonts-css'  href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='undiscovered-style-css'  href='http://<?=$urlwebsite;?>/css/style.css' type='text/css' media='all' />
+<style type='text/css'>
+
+		body, button, input {
+			font-family: 'Rokkitt', serif;
+		}
+
+		a {
+			color: #E83D52;
+		}
+		a:visited, a:hover, a:focus, a:active {
+			color: #BE3243;
+		}
+
+		.slicknav_menu, #main #infinite-handle span, .comment-form .form-submit input {
+			background: #E83D52;
+		}
+		.slicknav_btn, .slicknav_menu li a:hover, .slicknav_nav .slicknav_item:hover {
+			background: #BE3243;
+		}
+
+		.main-navigation a {
+			text-shadow: 2px -1px 1px #BE3243;
+			color: #fff;
+		}
+		.main-navigation ul ul {
+			border-color: #BE3243;
+		}
+		.main-navigation > div > ul > li > a {
+			border-bottom: 1px solid #E83D52;
+		}
+		.main-navigation > div > ul > li:hover > a {
+			border-bottom: 1px solid #BE3243;
+		}
+		.main-navigation ul ul a:hover {
+			color: #BE3243;
+		}
+
+		.entry-content blockquote, 
+		.format-link .entry-content p:first-child,
+		#main #infinite-handle span,
+		.comment-form .form-submit input {
+			border-color: #BE3243;
+		}
+		.entry-content blockquote:before {
+			color: #BE3243;
+		}
+
+		#main #infinite-handle span, .comment-form .form-submit input {
+			text-shadow: 2px -1px 1px #BE3243;
+		}
+
+		#site-navigation {
+			background: #E83D52;
+			border-top-color: #BE3243;
+		}
+	
+</style>
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/jquery.js'></script>
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/jquery.bxslider.min.js'></script>
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/jquery.slicknav.min.js'></script>
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/jquery.ui.totop.js'></script>
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/main.js'></script>
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='http://<?=$urlwebsite;?>' />
+<link rel="icon" href="img/favicon.png" type="images/x-icon" />	
+</head>
+
+<body class="single single-post postid-88990 single-format-standard logged-out">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header container" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+									<a class="logotype-text" href="http://<?=$urlwebsite;?>" title="<?=$keyword;?>" rel="home"><?=$keyword;?></a>
+							</h1>
+		</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+			<div class="menu"><ul><li ><a href="http://<?=$urlwebsite;?>" title="Home">Home</a></li></ul></div>
+
+			<form role="search" method="get" class="search-form">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+		</nav>
+
+		<div class="site-about">
+							<h2 class="site-description"><?=$urlwebsite;?> | <?=$keyword;?></h2>
+					</div>
+	</header>
+
+	<div id="content" class="site-content container">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+					<article id="post-88990" class="post-88990 post type-post status-publish format-standard hentry">
+	<header class="entry-header">
+		<img src="http://<?=$urlwebsite;?>/img/svg.png" width="45" alt="" class="post-icon" />
+
+				<div class="entry-meta">
+	
+		<p><?
+
+		echo '<ul>';
+	for($x = 0; $x < $limit; $x++){
+	
+
+$prod = explode(",",$data[$x]); /* ?? CSV ??? imacro ??????????? $prod = explode("\",\"",$data[$x]);*/
+$id=$prod[0];
+$title = $prod[1]; // ?????? 1;
+$img = $prod[2]; // ?????? 2;
+$prod_link = $prod[3]; // ??????3;
+$titleurl=slug($title);
+echo '<li><a href="http://'.$urlwebsite.'/bestseller/'.$id.'/'.$titleurl.'.html">'.$prod[1].'</a>';
+echo '</li>';
+
+}
+echo '</ul>';
+?></p>
+			</div>
+	
+	<footer class="entry-meta">
+								<span class="cat-links">
+				<img src="http://<?=$urlwebsite;?>/img/catagory.png" width="16" alt="" /> <?=$keyword;?>			</span>
+			
+						</footer>
+</article>
+
+			
+		
+		</main>
+	</div>
+
+	<div id="secondary" class="widget-area clear" role="complementary">
+		<div class="sidebar-left clear">
+				<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<?
+	include('tag.php');
+	?>
+		</aside>		</div>
+
+		<div class="sidebar-right clear">
+		
+			<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Relate Posts</h1>		<?
+	include('tag.php');
+	?>
+		</aside>
+				</div>
+	</div><!-- #secondary -->
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer container" role="contentinfo">
+		<div class="social-icons">
+					</div>
+
+		<div class="site-info">
+			Copyright</span> &copy; 2014 <a href="http://<?=$urlwebsite;?>"><?=$urlwebsite;?></a> | <a href="http://<?=$urlwebsite;?>/all.html">All Page</a> | <a href="http://<?=$urlwebsite;?>/sitemap.xml">Sitemap</a></br><? include("footer.php");?>
+	</footer>
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://<?=$urlwebsite;?>/css/skip-link-focus-fix.js'></script>
+</body>
+</html>
